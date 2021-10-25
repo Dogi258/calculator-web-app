@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background: linear-gradient(to right, rgb(68, 171, 255), rgb(0, 255, 200));
 }
 
 header {
@@ -40,15 +41,20 @@ main {
 
 .grid-container {
   display: grid;
-  width: 70vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, minmax(auto, 8em));
+  min-height: 60vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(150px, auto) repeat(5, 100px);
   grid-gap: 1em;
+  flex: 0;
+}
+
+.span-2 {
+  grid-column: span 2;
 }
 
 .button {
   background-color: rgb(216, 216, 216);
-  font-size: 4em;
+  font-size: 3em;
   border-radius: 1rem;
   background-color: white;
   border: 5px solid #e7e7e7;
@@ -67,11 +73,21 @@ main {
 .display {
   background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 1rem;
+  grid-column: 1 / -1;
   border-radius: 0;
   border: 3px solid black;
-  font-size: 4em;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous-operand {
+  color: gray;
+  font-size: 1.5rem;
+}
+.current-operand {
+  font-size: 3rem;
 }

@@ -15,30 +15,31 @@
     <title>Calculator</title>
   </head>
   <body>
-    <header>
-      <h1>Calculator</h1>
-    </header>
     <main>
       <div class="container">
         <div class="grid-container">
-          <div class="display"></div>
-          <button class="button btn-clear">Clear</button>
-          <button class="button number">1</button>
-          <button class="button number">2</button>
-          <button class="button number">3</button>
-          <button class="button">/</button>
-          <button class="button number">4</button>
-          <button class="button number">5</button>
-          <button class="button number">6</button>
-          <button class="button">x</button>
-          <button class="button number">7</button>
-          <button class="button number">8</button>
-          <button class="button number">9</button>
-          <button class="button">-</button>
-          <button class="button">.</button>
-          <button class="button number">0</button>
-          <button class="button">=</button>
-          <button class="button">+</button>
+          <div class="display">
+            <div data-previous-operand class="previous-operand">123 +</div>
+            <div data-current-operand class="current-operand">465</div>
+          </div>
+          <button data-all-clear class="button span-2">AC</button>
+          <button data-delete class="button">DEL</button>
+          <button data-operation class="button">÷</button>
+          <button data-number class="button">1</button>
+          <button data-number class="button">2</button>
+          <button data-number class="button">3</button>
+          <button data-operation class="button">x</button>
+          <button data-number class="button">4</button>
+          <button data-number class="button">5</button>
+          <button data-number class="button">6</button>
+          <button data-operation class="button">-</button>
+          <button data-number class="button">7</button>
+          <button data-number class="button">8</button>
+          <button data-number class="button">9</button>
+          <button data-operation class="button">+</button>
+          <button data-number class="button">.</button>
+          <button data-number class="button">0</button>
+          <button data-equals class="button span-2">=</button>
         </div>
       </div>
     </main>
