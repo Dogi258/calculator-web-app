@@ -15,7 +15,7 @@ body {
 
 header {
   padding: 2em;
-  font-size: 2em;
+  font-size: 2.5em;
   border-bottom: 3px dotted black;
 }
 footer {
@@ -23,6 +23,55 @@ footer {
 }
 
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   padding: 3em;
+}
+
+.container {
+  background-color: gray;
+  padding: 2em;
+  border: 4px solid black;
+  border-radius: 1em;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.grid-container {
+  display: grid;
+  width: 70vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, minmax(auto, 8em));
+  grid-gap: 1em;
+}
+
+.button {
+  background-color: rgb(216, 216, 216);
+  font-size: 4em;
+  border-radius: 1rem;
+  background-color: white;
+  border: 5px solid #e7e7e7;
+  transition: 0.1s;
+}
+
+.button:hover {
+  background-color: #e7e7e7;
+  transform: scale(1.1);
+}
+
+.button:active {
+  transform: scale(1);
+}
+
+.display {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border-radius: 0;
+  border: 3px solid black;
+  font-size: 4em;
 }
