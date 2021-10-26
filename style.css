@@ -70,6 +70,15 @@ main {
   transform: scale(1);
 }
 
+.accent {
+  background-color: rgb(255, 138, 95);
+  border-color: rgb(255, 115, 64);
+}
+
+.accent:hover {
+  background-color: rgb(255, 115, 64);
+}
+
 .display {
   background-color: white;
   display: flex;
