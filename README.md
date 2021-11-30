@@ -6,3 +6,4 @@ This project is a web application was build with vanilla HTML/CSS, and JavaScrip
 * How to position elements with CSS Grid
 * How to dynamically set event listeners to DOM objects
 * How to use more advance JavaScipt array function
+* How to use data attributes in JavaScript
